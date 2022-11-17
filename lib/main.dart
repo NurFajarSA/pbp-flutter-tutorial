@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pbp_flutter_tutorial/home_page.dart';
+import 'package:pbp_flutter_tutorial/view/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,4 +29,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

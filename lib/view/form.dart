@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pbp_flutter_tutorial/home_page.dart';
+import 'package:pbp_flutter_tutorial/view/home_page.dart';
+import 'package:pbp_flutter_tutorial/view/to_do_page.dart';
 
 class MyFormPage extends StatefulWidget {
   const MyFormPage({super.key});
@@ -36,8 +37,7 @@ class _MyFormPageState extends State<MyFormPage> {
                 // Route menu ke halaman utama
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(
-                      builder: (context) => const MyHomePage()),
+                  MaterialPageRoute(builder: (context) => const MyHomePage()),
                 );
               },
             ),
@@ -46,6 +46,16 @@ class _MyFormPageState extends State<MyFormPage> {
               onTap: () {
                 // Route menu ke halaman form
                 Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('To Do'),
+              onTap: () {
+                // Route menu ke halaman to do
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ToDoPage()),
+                );
               },
             ),
           ],
